@@ -8,10 +8,11 @@
 
 n = 1000
 
+
 def sum_of_multiples(n, multiple):
     upper_limit = (n - 1) // multiple
-    print(upper_limit)
     sum = multiple * upper_limit * (upper_limit + 1) // 2
     return sum
+
 
 print(sum_of_multiples(n, 3) + sum_of_multiples(n, 5) - sum_of_multiples(n, 15))
